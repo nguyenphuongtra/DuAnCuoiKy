@@ -1,0 +1,51 @@
+.tieude{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.search{
+  margin-bottom: 30px;
+  width: 300px;
+  height: 30px;
+  margin-left: 615px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.product-link{
+  text-decoration: none;
+}
+.home h1{
+  text-align: center;
+}
+.product-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.product-card{
+  width: 300px;
+  height: 340px;
+  margin-left: 10px;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+.product-link h2  {
+  margin-top: 50px;
+  text-align: center;
+  color: black;
+
+}
+.product-link p  {
+  text-align: center;
+  color: grey;
+}
+.product-image{
+  margin-top: 10px;
+  width: 240px;
+  height: 170px;
+  border-radius: 4px;
+  border-radius: 5px;
+}

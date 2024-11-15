@@ -1,0 +1,104 @@
+/* Login.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.body-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    background: linear-gradient(135deg, #4b79a1 0%, #283e51 100%);
+}
+
+.container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.box {
+    background: white;
+    width: 380px;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form h3 {
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.form span {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #888;
+}
+
+.form .type {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form .type input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.form .type input:focus {
+    border-color: #4b79a1;
+    box-shadow: 0 0 5px rgba(75, 121, 161, 0.2);
+}
+
+.forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #888;
+    margin-top: 10px;
+}
+
+.forgot span,
+.forgot a {
+    color: #4b79a1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.forgot a:hover {
+    color: #283e51;
+}
+
+.btn-si {
+    width: 100%;
+    padding: 12px;
+    background: #4b79a1;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-si:hover {
+    background: #283e51;
+}
