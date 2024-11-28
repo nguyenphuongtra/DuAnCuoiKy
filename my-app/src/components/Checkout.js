@@ -15,10 +15,10 @@ function Checkout({total, quantity}) {
       <p>Cảm ơn bạn đã mua sắm với chúng tôi! Vui lòng xem lại đơn hàng của bạn và tiến hành hoàn tất giao dịch mua.</p>
       <div className="checkout-summary">
         <h2>Tóm tắt đơn hàng</h2>
-        <p> Items: {quantity}</p>
+        <p> Số lượng: {quantity}</p>
         <h4 style={{color: 'red'}}>Tổng giá: ${total}</h4>
       </div>
-      <button onClick={handlePlaceOrder} className="btn-place-order">Place Order</button>
+      <button onClick={handlePlaceOrder} className="btn-place-order">Thanh toán</button>
       
     </div>
   );    

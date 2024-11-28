@@ -1,0 +1,223 @@
+
+.admin-page {
+  width: 90%;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.admin-page h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.btn-qlsp {
+  background-color: #27ae60;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.btn-qlsp :hover {
+  background-color: #27ae60;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+  overflow: hidden;
+}
+
+table, th, td {
+  border: 1px solid #e0e0e0;
+}
+
+th, td {
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+}
+
+th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #f4f4f9;
+}
+
+tr:hover {
+  background-color: #e9ecef;
+  cursor: pointer;
+}
+
+td img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Nút bấm hành động */
+.add-pro{
+  background-color: #28a745;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-pro:hover {
+  background-color: #2fbb69;
+}
+
+.btn-xoa {
+  background-color: #dc3545;
+  background-color: #28a745;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 5px;
+}
+
+.btn-xoa:hover {
+  background-color: #c82333;
+}
+.btn-del{
+  background-color: #dc3545;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 5px;
+}
+.product-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.product-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  max-width: 90%;
+  position: relative;
+}
+
+.product-form h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.product-form input, 
+.product-form select, 
+.product-form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.product-form input[type="file"] {
+  padding: 5px;
+}
+
+.product-form img {
+  display: block;
+  margin: 10px 0;
+  max-width: 100px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-form button {
+  width: 48%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.product-form button + button {
+  margin-left: 4%;
+}
+
+.product-form button.close-btn {
+  background-color: #6c757d;
+}
+
+.product-form button.close-btn:hover {
+  background-color: #5a6268;
+}
+
+.product-form button.save-btn {
+  background-color: #27ae60;
+}
+
+.product-form button.save-btn:hover {
+  background-color: #2fbb69;
+}
+
+/* Hiệu ứng nổi bật */
+.highlight {
+  background-color: #fffae6;
+  transition: background-color 0.3s ease;
+}
+
+
+
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.toggle-buttons button {
+  background-color: #27ae60;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-buttons button:hover {
+  background-color: #2fbb69;
+}

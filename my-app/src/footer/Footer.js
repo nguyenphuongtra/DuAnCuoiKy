@@ -1,8 +1,8 @@
 import React from 'react';
-import gift from '../assets/images/gift.svg';
-import clock from '../assets/images/clock.svg';
-import packageIcon from '../assets/images/package.svg';
-import refresh from '../assets/images/refresh-cw.svg';
+import gift from '../assets/images/p1.png';
+import clock from '../assets/images/p2.png';
+import packageIcon from '../assets/images/p3.png';
+import refresh from '../assets/images/p4.png';
 import amazonPay from '../assets/images/amazonpay.svg';
 import americanExpress from '../assets/images/american-express.svg';
 import mastercard from '../assets/images/mastercard.svg';
@@ -10,6 +10,9 @@ import paypal from '../assets/images/paypal.svg';
 import visa from '../assets/images/visa.svg';
 import appStoreBtn from '../assets/images/appstore-btn.svg';
 import googlePlayBtn from '../assets/images/googleplay-btn.svg';
+import zalo from '../assets/images/Zalo.jpg'
+import facebook from '../assets/images/facebook.png'
+import instagram from '../assets/images/instagram.jpg'
 
 function Footer() {
   return (
@@ -17,18 +20,18 @@ function Footer() {
       <div className="row mb-5">
         <div className="col-3">
           <div className="mb-4">
-            <img src={clock} alt="Clock Icon" />
+            <img src={gift} alt="Clock Icon" />
           </div>
-          <h3 className="h5 mb-3">10 Minute Grocery Now</h3>
+          <h3 className="h5 mb-3">Sản Phẩm chất lượng</h3>
           <p className="bs-dark-text-emphasis" style={{ fontSize: '14px' }}>
             Get your order delivered to your doorstep at <br /> the earliest from TeaShop pickup stores <br /> near you.
           </p>
         </div>
         <div className="col-3">
           <div className="mb-4">
-            <img src={gift} alt="Gift Icon" />
+            <img src={clock} alt="Gift Icon" />
           </div>
-          <h3 className="h5 mb-3">Best Prices & Offers</h3>
+          <h3 className="h5 mb-3">Chủng loại phong phú</h3>
           <p className="bs-dark-text-emphasis" style={{ fontSize: '14px' }}>
             Cheaper prices than your local supermarket,<br /> great cashback offers to top it off. Get best <br /> prices & offers.
           </p>
@@ -37,7 +40,7 @@ function Footer() {
           <div className="mb-4">
             <img src={packageIcon} alt="Package Icon" />
           </div>
-          <h3 className="h5 mb-3">Wide Assortment</h3>
+          <h3 className="h5 mb-3">Giá cả cạnh tranh</h3>
           <p className="bs-dark-text-emphasis" style={{ fontSize: '14px' }}>
             Choose from 5000+ products across food, personal care, household, bakery, veg, <br /> non-veg & other categories.
           </p>
@@ -46,10 +49,50 @@ function Footer() {
           <div className="mb-4">
             <img src={refresh} alt="Refresh Icon" />
           </div>
-          <h3 className="h5 mb-3">Easy Returns</h3>
+          <h3 className="h5 mb-3">Giao hàng nhanh chóng</h3>
           <p className="bs-dark-text-emphasis" style={{ fontSize: '14px' }}>
             Not satisfied with a product? Return it at the doorstep & get a refund within hours. No questions asked policy.
           </p>
+        </div>
+      </div>
+      <hr />
+      <div className="footer">
+        <div className="row">
+          <h5>Tổng đài hỗ trợ</h5>
+          <span className='f'>Mua hàng: (024) 3568 6969</span>
+          <span>Bảo hành: (028) 38 333 222</span>
+        </div>
+        <div className="row">
+          <h5>Hỗ trợ khách hàng</h5>
+          <span>Kiếu nại bồi thường</span>
+          <span>Hình thức thanh toán</span>
+          <span>Hướng dẫn mua hàng</span>
+          <span>Hóa đơn GTGT điện tử</span>
+          <span>Chính sách và Quy định chung</span>
+          <span>Chính sách bán hàng & Chất lượng hàng hóa</span>
+          <span>Giao nhận hàng hóa</span>
+          <span>Chính sách Đổi - Trả hàng hóa</span>
+          <span>Chính sách Bảo hành</span>
+          <span>Bảo mật dữ liệu cá nhân</span>
+        </div>
+        <div className="row">
+          <h5>Quản lý tài khoản</h5>
+          <span>Thay đổi thông tin</span>
+          <span>Lấy lại mật khẩu</span>
+          <span>Tra cứu đơn hàng</span>
+          <span>Quản lý giỏ hàng</span>
+        </div>
+        <div className="row">
+          <h5>Về STARTBOX</h5>
+          <span>Giới thiệu về STARTBOX</span>
+          <span>Liên hệ</span>
+          <span>Tuyển dụng</span>
+          <span>Sơ đồ website</span>
+        </div>
+        <div className="row">
+          <h5>Kết nối với chúng tôi</h5>
+          <img src={zalo} alt="" />
+          <div className="language-selector">Language/语言/言語/언어/Sprache</div>
         </div>
       </div>
 
@@ -88,7 +131,7 @@ function Footer() {
       </div>
 
       <div className="row" style={{ backgroundColor: '#f0f3f2' }}>
-        <hr />
+    <hr />
       </div>
 
       <div className="row mb-5" style={{ backgroundColor: '#f0f3f2' }}>

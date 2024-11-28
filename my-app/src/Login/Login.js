@@ -1,52 +1,74 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import "./Login.css"
-import { useState } from 'react'
+import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { useForm } from 'react-hook-form';
+import "./Login.css";
+
 function Login() {
-    const [email, setEmail] = useState('')
-    const [password, setPassWord] = useState('')
-    
-    const handleEmail = (event) => {
-        setEmail(event.target.value)
+  const navigate = useNavigate();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => {
+    if (data.username === "npt" && data.password === "111111") {
+      console.log("Login successful!", data);
+      navigate("/");
+    } else {
+      console.log("Login failed!");
+      alert("Tên đăng nhập hoặc mật khẩu không chính xác!");
     }
-    const handlePassWord = (event) => {
-        setPassWord(event.target.value)
-    }
-    const handleSubmit = (event) => {
-        event.preventDefault();
-    }
+  };
+
   return (
     <div className="body-login">
-        <div class="container-login">
-            <div class="box">
-                <div class="form sign_in">
-                    <h3>Sign In</h3>
-                    <span>or use your account</span>
+      <div className="container-login">
+        <div className="box">
+          <div className="form sign_in">
+            <h3 style={{ textAlign: 'center' }}>Đăng nhập</h3>
 
-                    <form action="#" id="form_input" onSubmit={handleSubmit}>
-                        <div class="type">
-                            <input type="email" placeholder="Email" name="" id="email" value={email} onChange={handleEmail}/>
-                        </div>
-                        <div class="type">
-                            <input type="password" placeholder="Password" name="" id="password" value={password} onChange={handlePassWord}/>
+            <form onSubmit={handleSubmit(onSubmit)}>
+              <div className="type">
+                <input
+                  type="text"
+                  placeholder="Tên đăng nhập"
+                  {...register("username", {
+                    required: "Tên đăng nhập là bắt buộc",
+                    minLength: {
+                      value: 3,
+                      message: "Tên đăng nhập phải ít nhất 3 kí tự",
+                    },
+                  })}
+                />
+                {errors.username && <p className="error-message">{errors.username.message}</p>}
+              </div>
+              <div className="type">
+                <input
+                  type="password"
+                  placeholder="Mật khẩu"
+                  {...register("password", {
+                    required: "Mật khẩu là bắt buộc",
+                    minLength: {
+                      value: 6,
+                      message: "Mật khẩu phải ít nhất 6 kí tự",
+                    },
+                  })}
+                />
+                {errors.password && <p className="error-message">{errors.password.message}</p>}
+              </div>
 
-                        </div>
-
-                        <div class="forgot">
-                            <span>Forgot your password?</span>
-                            <Link to={'/signup'}>Sign up</Link>
-                        </div>
-
-                        <Link to={'/'}><button class="btn-si">Sign In</button></Link>
-                    </form>
-                </div>
-        
-                
-            </div>
-
+              <div className="forgot">
+                <span>Quên mật khẩu?</span>
+                <Link to={'/signup'}>Đăng ký</Link>
+              </div>
+              <button className="btn-si" type="submit">Đăng nhập</button>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Login
+export default Login;

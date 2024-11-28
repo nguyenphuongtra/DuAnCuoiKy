@@ -24,7 +24,7 @@ function Cart({ cartItems, updateQuantity, deleteProduct, total, quantity }) {
   };
 
   const handleCheckout = () => {
-    navigate('/checkout');
+    navigate('/address');
   };
 
     const handleIncrease = (index) => {
@@ -39,7 +39,7 @@ function Cart({ cartItems, updateQuantity, deleteProduct, total, quantity }) {
     }
   return (
     <div className='cart'>
-      <h1><i className="fa-solid fa-cart-shopping"></i> Your cart</h1>
+      <h1><i className="fa-solid fa-cart-shopping"></i> Giỏ hàng</h1>
       {cartItems.length === 0 ? (
         <p>No items in cart</p>
       ) : (
@@ -59,9 +59,9 @@ function Cart({ cartItems, updateQuantity, deleteProduct, total, quantity }) {
             </div>
           ))}
           <div className='quantity'>
-            <h3>Items: {quantity}</h3>
-            <h3 style={{ color: 'red' }}>Total: ${total}</h3>
-            <button onClick={handleCheckout} className='btn-thanhtoan'>Proceed to checkout</button>
+            <h3>Số lượng: {quantity}</h3>
+            <h3 style={{ color: 'red' }}>Giá: ${total}</h3>
+            <button onClick={handleCheckout} className='btn-thanhtoan'>Tiến hành thanh toán</button>
           </div>
         </div>
       )}

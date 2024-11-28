@@ -1,0 +1,191 @@
+/* CSS for Introduce Page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #0056b3; /* Màu xanh đậm */
+    margin-top: 20px;
+  }
+  
+  h6 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 20px 0 10px;
+  }
+  
+  h6[style*="font-weight:bold"] {
+    color: #0056b3; /* Thay đổi màu chữ bold */
+  }
+  
+  p {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+  
+  p[style*="font-weight:bold"] {
+    color: #007bff; /* Màu xanh sáng hơn cho phần in đậm */
+    font-style: italic;
+  }
+  
+  ul {
+    margin: 20px 0;
+    padding-left: 20px;
+  }
+  
+  ul li {
+    margin: 5px 0;
+  }
+  
+  hr {
+    border: 1px solid #eee;
+    margin: 30px 0;
+  }
+  
+  /* Container styles */
+  div[style*="backgroundColor:white"] {
+    background-color: #f9f9f9; /* Màu nền nhẹ nhàng */
+    padding: 20px 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 900px;
+  }
+  
+  /* Footer styles */
+  footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  .back-home-button {
+    background-color: #4CAF50; /* Màu nền xanh */
+    color: white; /* Màu chữ trắng */
+    padding: 10px 20px; /* Khoảng cách xung quanh chữ */
+    border: none;
+    border-radius: 5px; /* Bo góc */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .back-home-button:hover {
+    background-color: #45a049; /* Màu nền khi hover */
+  }
+  /* ContactForm.css */
+
+.contact-form-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.contact-info {
+  flex: 1;
+  font-family: Arial, sans-serif;
+}
+
+.contact-info h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+.contact-info p {
+  font-size: 16px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.contact-info i {
+  color: #27ae60;
+  margin-right: 10px;
+}
+
+.certification img {
+  margin-top: 20px;
+  width: 150px;
+}
+
+.contact-form {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+.submit-button {
+  padding: 10px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #1e8449;
+}
+
+.confirmation-message {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.confirmation-message h4 {
+  font-size: 20px;
+  color: #27ae60;
+}
+
+.confirmation-message p {
+  font-size: 16px;
+  color: #555;
+}
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: 1px solid #ddd;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #27ae60;
+  outline: none;
+}
+
+  
